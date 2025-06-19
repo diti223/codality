@@ -20,6 +20,9 @@
 
 ## 📁 File Structure Rules
 
+- Create a gitignore file for the project
+- Create a README.md file for the project
+
 ### Required Directory Structure
 ```
 project-root/
