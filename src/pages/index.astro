@@ -1,5 +1,5 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
+import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
 <BaseLayout title="CODALITY - Your Partners in Software Excellence">
@@ -7,17 +7,34 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 		<div class="container">
 			<header class="hero">
 				<div class="hero-content">
-					<img src="/CODALITY logo - small.png" alt="CODALITY Logo" class="logo" />
+					<img
+						src="/CODALITY logo - small.png"
+						alt="CODALITY Logo"
+						class="logo"
+					/>
 					<h1>Your Partners in Software Excellence</h1>
-					<p class="subheader">Friendly, professional, and dedicated to bringing your ideas to life with reliable, experienced, and tailored solutions.</p>
+					<p class="subheader">
+						Friendly, professional, and dedicated to bringing your ideas to life
+						with reliable, experienced, and tailored solutions.
+					</p>
 					<div class="cta-buttons">
-						<a href="mailto:contact@codality.eu" class="btn btn-primary">Reach Out Today</a>
-						<a href="https://calendly.com/adrian-bilescu/1-on-1" class="btn btn-secondary" target="_blank">Schedule a Conversation</a>
+						<a href="mailto:contact@codality.eu" class="btn btn-primary"
+							>Reach Out Today</a
+						>
+						<a
+							href="https://calendly.com/adrian-bilescu/1-on-1"
+							class="btn btn-secondary"
+							target="_blank">Schedule a Conversation</a
+						>
 					</div>
 				</div>
 				<div class="hero-image">
 					<div class="image-wrapper">
-						<img src="/Profile_v3-240.png" alt="Professional Profile" class="profile-image" />
+						<img
+							src="/Profile_v3-240.png"
+							alt="Professional Profile"
+							class="profile-image"
+						/>
 						<div class="image-decoration"></div>
 					</div>
 				</div>
@@ -25,7 +42,10 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
 			<section class="services">
 				<h2>Our Services</h2>
-				<p class="services-intro">We're here to help you succeed with a full range of development and consulting services.</p>
+				<p class="services-intro">
+					We're here to help you succeed with a full range of development and
+					consulting services.
+				</p>
 				<div class="services-grid">
 					<div class="service-card">
 						<div class="service-icon">📱</div>
@@ -44,8 +64,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 					</div>
 					<div class="service-card">
 						<div class="service-icon">⚡</div>
-						<h3>Atlassian Solutions</h3>
-						<p>Project management & workflows</p>
+						<h3>Atlassian Administration</h3>
+						<p>Tailored Administration of JIRA, Confluence & Agile Workflows</p>
 					</div>
 				</div>
 			</section>
@@ -55,8 +75,15 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 					<div class="lemon-card">
 						<div class="lemon-icon">🍋</div>
 						<h2>Lemon Nutrition</h2>
-						<p>Our own nutrition startup - making healthy eating simple and accessible for everyone.</p>
-						<a href="https://lemonnutrition.eu" class="btn btn-lemon" target="_blank">Visit Lemon Nutrition</a>
+						<p>
+							Our own nutrition startup - making healthy eating simple and
+							accessible for everyone.
+						</p>
+						<a
+							href="https://lemonnutrition.eu"
+							class="btn btn-lemon"
+							target="_blank">Visit Lemon Nutrition</a
+						>
 					</div>
 				</div>
 			</section>
@@ -64,15 +91,25 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 			<section class="testimonial">
 				<div class="testimonial-content">
 					<h2>Let's Build Something Amazing Together</h2>
-					<p>We believe in creating lasting partnerships with our clients. Every project is an opportunity to solve real problems and make a positive impact.</p>
+					<p>
+						We believe in creating lasting partnerships with our clients. Every
+						project is an opportunity to solve real problems and make a positive
+						impact.
+					</p>
 					<div class="contact-options">
 						<div class="contact-option">
 							<h3>Send us a message</h3>
-							<a href="mailto:contact@codality.eu" class="btn btn-primary">Contact Us</a>
+							<a href="mailto:contact@codality.eu" class="btn btn-primary"
+								>Contact Us</a
+							>
 						</div>
 						<div class="contact-option">
 							<h3>Book a friendly chat</h3>
-							<a href="https://calendly.com/adrian-bilescu/1-on-1" class="btn btn-secondary" target="_blank">Schedule Time</a>
+							<a
+								href="https://calendly.com/adrian-bilescu/1-on-1"
+								class="btn btn-secondary"
+								target="_blank">Schedule Time</a
+							>
 						</div>
 					</div>
 				</div>
@@ -89,7 +126,13 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 	}
 
 	body {
-		font-family: 'Nunito', 'Rubik', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+		font-family:
+			"Nunito",
+			"Rubik",
+			-apple-system,
+			BlinkMacSystemFont,
+			"Segoe UI",
+			sans-serif;
 		line-height: 1.7;
 		color: #4a5568;
 		background: linear-gradient(135deg, #e8f5e8 0%, #f0f8ff 50%, #fef5e7 100%);
@@ -154,13 +197,18 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 	}
 
 	.btn::before {
-		content: '';
+		content: "";
 		position: absolute;
 		top: 0;
 		left: -100%;
 		width: 100%;
 		height: 100%;
-		background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+		background: linear-gradient(
+			90deg,
+			transparent,
+			rgba(255, 255, 255, 0.3),
+			transparent
+		);
 		transition: left 0.5s;
 	}
 
@@ -324,13 +372,17 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 	}
 
 	.lemon-card::before {
-		content: '';
+		content: "";
 		position: absolute;
 		top: -50%;
 		right: -50%;
 		width: 100%;
 		height: 100%;
-		background: radial-gradient(circle, rgba(246, 224, 94, 0.1) 0%, transparent 70%);
+		background: radial-gradient(
+			circle,
+			rgba(246, 224, 94, 0.1) 0%,
+			transparent 70%
+		);
 		transform: rotate(45deg);
 	}
 
