@@ -1,5 +1,6 @@
 ---
-description:
-globs:
+description: 
+globs: 
 alwaysApply: false
 ---
+[AI_WEB_DEVELOPMENT_RULES.md](mdc:AI_WEB_DEVELOPMENT_RULES.md)
