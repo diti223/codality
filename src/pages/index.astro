@@ -1,0 +1,490 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="CODALITY - Your Partners in Software Excellence">
+	<main>
+		<div class="container">
+			<header class="hero">
+				<div class="hero-content">
+					<img src="/CODALITY logo - small.png" alt="CODALITY Logo" class="logo" />
+					<h1>Your Partners in Software Excellence</h1>
+					<p class="subheader">Friendly, professional, and dedicated to bringing your ideas to life with reliable, experienced, and tailored solutions.</p>
+					<div class="cta-buttons">
+						<a href="mailto:contact@codality.eu" class="btn btn-primary">Reach Out Today</a>
+						<a href="https://calendly.com/adrian-bilescu/1-on-1" class="btn btn-secondary" target="_blank">Schedule a Conversation</a>
+					</div>
+				</div>
+				<div class="hero-image">
+					<div class="image-wrapper">
+						<img src="/Profile_v3-240.png" alt="Professional Profile" class="profile-image" />
+						<div class="image-decoration"></div>
+					</div>
+				</div>
+			</header>
+
+			<section class="services">
+				<h2>Our Services</h2>
+				<p class="services-intro">We're here to help you succeed with a full range of development and consulting services.</p>
+				<div class="services-grid">
+					<div class="service-card">
+						<div class="service-icon">📱</div>
+						<h3>iOS Development</h3>
+						<p>Native apps with Swift & SwiftUI</p>
+					</div>
+					<div class="service-card">
+						<div class="service-icon">🌟</div>
+						<h3>Developer Coaching</h3>
+						<p>Mentorship for teams & individuals</p>
+					</div>
+					<div class="service-card">
+						<div class="service-icon">✨</div>
+						<h3>Quality Assurance</h3>
+						<p>Testing & automation expertise</p>
+					</div>
+					<div class="service-card">
+						<div class="service-icon">⚡</div>
+						<h3>Atlassian Solutions</h3>
+						<p>Project management & workflows</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="lemon-section">
+				<div class="lemon-content">
+					<div class="lemon-card">
+						<div class="lemon-icon">🍋</div>
+						<h2>Lemon Nutrition</h2>
+						<p>Our own nutrition startup - making healthy eating simple and accessible for everyone.</p>
+						<a href="https://lemonnutrition.eu" class="btn btn-lemon" target="_blank">Visit Lemon Nutrition</a>
+					</div>
+				</div>
+			</section>
+
+			<section class="testimonial">
+				<div class="testimonial-content">
+					<h2>Let's Build Something Amazing Together</h2>
+					<p>We believe in creating lasting partnerships with our clients. Every project is an opportunity to solve real problems and make a positive impact.</p>
+					<div class="contact-options">
+						<div class="contact-option">
+							<h3>Send us a message</h3>
+							<a href="mailto:contact@codality.eu" class="btn btn-primary">Contact Us</a>
+						</div>
+						<div class="contact-option">
+							<h3>Book a friendly chat</h3>
+							<a href="https://calendly.com/adrian-bilescu/1-on-1" class="btn btn-secondary" target="_blank">Schedule Time</a>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</main>
+</BaseLayout>
+
+<style>
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+	body {
+		font-family: 'Nunito', 'Rubik', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+		line-height: 1.7;
+		color: #4a5568;
+		background: linear-gradient(135deg, #e8f5e8 0%, #f0f8ff 50%, #fef5e7 100%);
+		min-height: 100vh;
+	}
+
+	.container {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 0 2rem;
+	}
+
+	.hero {
+		display: grid;
+		grid-template-columns: 1.5fr 1fr;
+		gap: 4rem;
+		align-items: center;
+		padding: 4rem 0;
+		min-height: 80vh;
+	}
+
+	.hero-content h1 {
+		font-size: 3.5rem;
+		font-weight: 800;
+		color: #2d3748;
+		margin-bottom: 1.5rem;
+		line-height: 1.2;
+	}
+
+	.subheader {
+		font-size: 1.4rem;
+		color: #4a5568;
+		margin-bottom: 3rem;
+		line-height: 1.6;
+		font-weight: 400;
+	}
+
+	.logo {
+		width: 70px;
+		height: 70px;
+		margin-bottom: 2rem;
+		filter: hue-rotate(180deg) saturate(0.8);
+	}
+
+	.cta-buttons {
+		display: flex;
+		gap: 1.5rem;
+		flex-wrap: wrap;
+	}
+
+	.btn {
+		display: inline-block;
+		padding: 1.2rem 2.5rem;
+		border-radius: 50px;
+		text-decoration: none;
+		font-weight: 700;
+		transition: all 0.3s ease;
+		border: 2px solid transparent;
+		font-size: 1.1rem;
+		position: relative;
+		overflow: hidden;
+	}
+
+	.btn::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: -100%;
+		width: 100%;
+		height: 100%;
+		background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+		transition: left 0.5s;
+	}
+
+	.btn:hover::before {
+		left: 100%;
+	}
+
+	.btn-primary {
+		background: linear-gradient(135deg, #4299e1 0%, #3182ce 100%);
+		color: white;
+		box-shadow: 0 4px 15px rgba(66, 153, 225, 0.3);
+	}
+
+	.btn-primary:hover {
+		transform: translateY(-3px);
+		box-shadow: 0 8px 25px rgba(66, 153, 225, 0.4);
+	}
+
+	.btn-secondary {
+		background: linear-gradient(135deg, #48bb78 0%, #38a169 100%);
+		color: white;
+		box-shadow: 0 4px 15px rgba(72, 187, 120, 0.3);
+	}
+
+	.btn-secondary:hover {
+		transform: translateY(-3px);
+		box-shadow: 0 8px 25px rgba(72, 187, 120, 0.4);
+	}
+
+	.btn-lemon {
+		background: linear-gradient(135deg, #f6e05e 0%, #ecc94b 100%);
+		color: #2d3748;
+		box-shadow: 0 4px 15px rgba(246, 224, 94, 0.3);
+		font-weight: 800;
+	}
+
+	.btn-lemon:hover {
+		transform: translateY(-3px);
+		box-shadow: 0 8px 25px rgba(246, 224, 94, 0.4);
+		background: linear-gradient(135deg, #ecc94b 0%, #d69e2e 100%);
+	}
+
+	.hero-image {
+		text-align: center;
+		position: relative;
+	}
+
+	.image-wrapper {
+		position: relative;
+		display: inline-block;
+	}
+
+	.profile-image {
+		width: 280px;
+		height: 280px;
+		border-radius: 50%;
+		object-fit: cover;
+		border: 5px solid rgba(255, 255, 255, 0.8);
+		box-shadow: 0 20px 60px rgba(66, 153, 225, 0.2);
+		position: relative;
+		z-index: 2;
+	}
+
+	.image-decoration {
+		position: absolute;
+		top: -20px;
+		right: -20px;
+		width: 100px;
+		height: 100px;
+		background: linear-gradient(135deg, #ed8936 0%, #dd6b20 100%);
+		border-radius: 50%;
+		z-index: 1;
+		opacity: 0.7;
+	}
+
+	.services {
+		padding: 5rem 0;
+		background: rgba(255, 255, 255, 0.7);
+		border-radius: 30px;
+		margin: 2rem 0;
+		backdrop-filter: blur(10px);
+	}
+
+	.services h2 {
+		text-align: center;
+		font-size: 3rem;
+		margin-bottom: 1rem;
+		color: #2d3748;
+		font-weight: 800;
+	}
+
+	.services-intro {
+		text-align: center;
+		font-size: 1.3rem;
+		color: #4a5568;
+		margin-bottom: 4rem;
+		max-width: 600px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.services-grid {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 2rem;
+	}
+
+	.service-card {
+		background: rgba(255, 255, 255, 0.9);
+		padding: 2.5rem 1.5rem;
+		border-radius: 25px;
+		text-align: center;
+		box-shadow: 0 10px 30px rgba(66, 153, 225, 0.1);
+		transition: all 0.3s ease;
+		border: 2px solid rgba(255, 255, 255, 0.5);
+	}
+
+	.service-card:hover {
+		transform: translateY(-10px);
+		box-shadow: 0 20px 50px rgba(66, 153, 225, 0.2);
+	}
+
+	.service-icon {
+		font-size: 3rem;
+		margin-bottom: 1.5rem;
+		display: block;
+	}
+
+	.service-card h3 {
+		font-size: 1.3rem;
+		margin-bottom: 1rem;
+		font-weight: 700;
+		color: #2d3748;
+	}
+
+	.service-card p {
+		font-size: 1rem;
+		line-height: 1.6;
+		font-weight: 400;
+		color: #4a5568;
+	}
+
+	.lemon-section {
+		padding: 5rem 0;
+		text-align: center;
+	}
+
+	.lemon-content {
+		max-width: 600px;
+		margin: 0 auto;
+	}
+
+	.lemon-card {
+		background: linear-gradient(135deg, #fef5e7 0%, #fffaf0 100%);
+		padding: 4rem 3rem;
+		border-radius: 30px;
+		box-shadow: 0 20px 60px rgba(246, 224, 94, 0.2);
+		border: 3px solid rgba(246, 224, 94, 0.3);
+		position: relative;
+		overflow: hidden;
+	}
+
+	.lemon-card::before {
+		content: '';
+		position: absolute;
+		top: -50%;
+		right: -50%;
+		width: 100%;
+		height: 100%;
+		background: radial-gradient(circle, rgba(246, 224, 94, 0.1) 0%, transparent 70%);
+		transform: rotate(45deg);
+	}
+
+	.lemon-icon {
+		font-size: 4rem;
+		margin-bottom: 2rem;
+		display: block;
+		position: relative;
+		z-index: 2;
+	}
+
+	.lemon-card h2 {
+		font-size: 2.5rem;
+		margin-bottom: 1.5rem;
+		color: #2d3748;
+		font-weight: 800;
+		position: relative;
+		z-index: 2;
+	}
+
+	.lemon-card p {
+		font-size: 1.3rem;
+		color: #4a5568;
+		margin-bottom: 2.5rem;
+		line-height: 1.6;
+		position: relative;
+		z-index: 2;
+	}
+
+	.testimonial {
+		padding: 5rem 0;
+		text-align: center;
+	}
+
+	.testimonial-content h2 {
+		font-size: 3rem;
+		margin-bottom: 2rem;
+		color: #2d3748;
+		font-weight: 800;
+	}
+
+	.testimonial-content p {
+		font-size: 1.4rem;
+		color: #4a5568;
+		margin-bottom: 4rem;
+		max-width: 700px;
+		margin-left: auto;
+		margin-right: auto;
+		line-height: 1.7;
+	}
+
+	.contact-options {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 3rem;
+		margin-top: 3rem;
+	}
+
+	.contact-option {
+		background: rgba(255, 255, 255, 0.8);
+		padding: 3rem 2rem;
+		border-radius: 25px;
+		box-shadow: 0 10px 30px rgba(66, 153, 225, 0.1);
+	}
+
+	.contact-option h3 {
+		font-size: 1.5rem;
+		margin-bottom: 1.5rem;
+		color: #2d3748;
+		font-weight: 700;
+	}
+
+	@media (max-width: 1024px) {
+		.services-grid {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+
+	@media (max-width: 768px) {
+		.container {
+			padding: 0 1rem;
+		}
+
+		.hero {
+			grid-template-columns: 1fr;
+			text-align: center;
+			padding: 3rem 0;
+		}
+
+		.hero-content h1 {
+			font-size: 2.5rem;
+		}
+
+		.subheader {
+			font-size: 1.2rem;
+		}
+
+		.cta-buttons {
+			justify-content: center;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		.btn {
+			width: 100%;
+			max-width: 300px;
+		}
+
+		.services h2 {
+			font-size: 2.2rem;
+		}
+
+		.services-intro {
+			font-size: 1.1rem;
+		}
+
+		.services-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.service-card {
+			padding: 2rem 1.5rem;
+		}
+
+		.lemon-card {
+			padding: 3rem 2rem;
+		}
+
+		.lemon-card h2 {
+			font-size: 2rem;
+		}
+
+		.testimonial-content h2 {
+			font-size: 2.2rem;
+		}
+
+		.testimonial-content p {
+			font-size: 1.2rem;
+		}
+
+		.contact-options {
+			grid-template-columns: 1fr;
+		}
+
+		.profile-image {
+			width: 220px;
+			height: 220px;
+		}
+
+		.image-decoration {
+			width: 80px;
+			height: 80px;
+			top: -15px;
+			right: -15px;
+		}
+	}
+</style>
